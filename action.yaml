@@ -1,0 +1,11 @@
+name: 'Sample Action'
+description: 'A simple action to demonstrate GitHub Actions versioning'
+
+runs:
+  using: composite
+  steps:
+    - name: Run the action
+      shell: bash
+      run: |
+        echo "This is a GitHub Actions Versioning Demo!"
+        
