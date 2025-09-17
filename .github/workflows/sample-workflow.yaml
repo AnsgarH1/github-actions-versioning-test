@@ -3,10 +3,15 @@ name: Sample Workflow
 on:
     push:
 
+
 jobs:
     build:
         runs-on: ubuntu-latest
+        outputs:
+            message: ${{ steps.run-action.outputs.message }}
+            version: ${{ steps.run-action.outputs.version }}
         steps:
 
             - name: Run the reusable workflow
-              uses: AnsgarH1/github-actions-versioning-test@main
+              uses: AnsgarH1/github-actions-versioning-test@v1.0.0
+    
