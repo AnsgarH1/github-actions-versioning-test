@@ -13,5 +13,5 @@ jobs:
         steps:
 
             - name: Run the reusable workflow
-              uses: AnsgarH1/github-actions-versioning-test@v1.0.0
+              uses: AnsgarH1/github-actions-versioning-test@v1
     
