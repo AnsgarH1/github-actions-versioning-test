@@ -7,5 +7,6 @@ jobs:
     build:
         runs-on: ubuntu-latest
         steps:
+
             - name: Run the reusable workflow
-              uses: ./
+              uses: AnsgarH1/github-actions-versioning-test@main
